@@ -38,9 +38,7 @@ export function ProductCard({ product, prominent = false }: ProductCardProps) {
         </div>
         <div className="mt-6 flex items-start justify-between gap-6">
           <div>
-            <h3 className="text-2xl font-semibold tracking-tight">
-              {product.title}
-            </h3>
+            <h3 className="text-2xl font-semibold tracking-tight">{product.title}</h3>
             <p className="mt-2 text-sm font-medium text-muted-foreground">
               {product.subtitle}
             </p>

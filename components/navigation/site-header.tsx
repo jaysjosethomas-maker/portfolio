@@ -35,9 +35,7 @@ export function SiteHeader() {
             JT
           </span>
           <span className="hidden flex-col leading-none sm:flex">
-            <span className="text-sm font-semibold tracking-tight">
-              {profile.name}
-            </span>
+            <span className="text-sm font-semibold tracking-tight">{profile.name}</span>
             <span className="mt-1 text-[11px] font-medium uppercase tracking-[0.22em] text-muted-foreground">
               Product Leader
             </span>
@@ -83,10 +81,7 @@ export function SiteHeader() {
       </div>
 
       <Collapsible.Content className="border-t border-border md:hidden">
-        <nav
-          aria-label="Mobile primary"
-          className="grid gap-1 px-5 py-4"
-        >
+        <nav aria-label="Mobile primary" className="grid gap-1 px-5 py-4">
           {navItems.map((item) => {
             const active =
               item.href === "/"

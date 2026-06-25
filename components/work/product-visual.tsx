@@ -56,8 +56,7 @@ export function ProductVisual({
         <div>
           <p className="text-2xl font-semibold tracking-tight">{title}</p>
           <p className="mt-2 max-w-sm text-sm leading-6 text-white/68">
-            Product story placeholder for a future image, prototype, or launch
-            artifact.
+            Product story placeholder for a future image, prototype, or launch artifact.
           </p>
         </div>
       </div>

@@ -1,12 +1,11 @@
 @import "tailwindcss";
-@plugin "tw-animate-css";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --font-sans:
-    "General Sans", var(--font-inter), Inter, ui-sans-serif, system-ui,
-    sans-serif;
+    "General Sans", var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif;
   --font-mono:
     var(--font-jetbrains-mono), "JetBrains Mono", ui-monospace, SFMono-Regular,
     monospace;
@@ -148,8 +147,16 @@
 
   .surface-grid {
     background-image:
-      linear-gradient(to right, color-mix(in oklch, var(--border) 55%, transparent) 1px, transparent 1px),
-      linear-gradient(to bottom, color-mix(in oklch, var(--border) 55%, transparent) 1px, transparent 1px);
+      linear-gradient(
+        to right,
+        color-mix(in oklch, var(--border) 55%, transparent) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        color-mix(in oklch, var(--border) 55%, transparent) 1px,
+        transparent 1px
+      );
     background-size: 48px 48px;
   }
 }

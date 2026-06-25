@@ -1,6 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { Container } from "@/components/layout/container";
 import { Badge } from "@/components/ui/badge";
@@ -23,20 +22,22 @@ export default function ContactPage() {
         If the problem is complex, the conversation is probably worth having.
       </h1>
       <p className="mt-7 max-w-3xl text-pretty text-lg leading-8 text-muted-foreground md:text-xl">
-        Jays is focused on product leadership roles where AI infrastructure,
-        cloud platforms, marketplaces, or enterprise systems need stronger
-        product judgment and execution.
+        Jays is focused on product leadership roles where AI infrastructure, cloud
+        platforms, marketplaces, or enterprise systems need stronger product judgment
+        and execution.
       </p>
 
       <div className="mt-10 flex flex-wrap gap-3">
         <Button asChild>
-          <Link href={`mailto:${profile.email}`}>
+          <a href={`mailto:${profile.email}`}>
             Email Jays
             <ArrowUpRight aria-hidden="true" />
-          </Link>
+          </a>
         </Button>
         <Button asChild variant="outline">
-          <Link href={profile.resumePath}>Download Resume</Link>
+          <a download href={profile.resumePath}>
+            Download Resume
+          </a>
         </Button>
       </div>
 
@@ -59,9 +60,7 @@ export default function ContactPage() {
             <p className="mt-8 font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">
               {link.label}
             </p>
-            <p className="mt-3 text-lg font-semibold tracking-tight">
-              {link.value}
-            </p>
+            <p className="mt-3 text-lg font-semibold tracking-tight">{link.value}</p>
           </a>
         ))}
       </div>

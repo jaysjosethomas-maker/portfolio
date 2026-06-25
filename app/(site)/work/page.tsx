@@ -26,9 +26,9 @@ export default function WorkPage() {
             Work that turned complex systems into product leverage.
           </h1>
           <p className="mt-7 max-w-3xl text-pretty text-lg leading-8 text-muted-foreground md:text-xl">
-            Each story is written around the decisions that matter to hiring
-            teams: problem framing, constraints, tradeoffs, execution,
-            architecture, metrics, and learning.
+            Each story is written around the decisions that matter to hiring teams:
+            problem framing, constraints, tradeoffs, execution, architecture, metrics,
+            and learning.
           </p>
         </div>
       </Container>

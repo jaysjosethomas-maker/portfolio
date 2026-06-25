@@ -2,8 +2,6 @@
 
 import * as Tabs from "@radix-ui/react-tabs";
 import { Download } from "lucide-react";
-import type { Route } from "next";
-import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -36,10 +34,10 @@ export function ResumeView() {
           ))}
         </Tabs.List>
         <Button asChild>
-          <Link download href={profile.resumePath as Route}>
+          <a download href={profile.resumePath}>
             <Download aria-hidden="true" />
             Download PDF
-          </Link>
+          </a>
         </Button>
       </div>
 
@@ -71,9 +69,7 @@ export function ResumeView() {
                       <dt className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                         {metric.label}
                       </dt>
-                      <dd className="mt-2 text-sm font-semibold">
-                        {metric.value}
-                      </dd>
+                      <dd className="mt-2 text-sm font-semibold">{metric.value}</dd>
                     </div>
                   ))}
                 </dl>
@@ -126,10 +122,7 @@ export function ResumeView() {
               <h2 className="font-semibold tracking-tight">{group.title}</h2>
               <ul className="mt-4 grid gap-2">
                 {group.items.map((item) => (
-                  <li
-                    className="text-sm leading-6 text-muted-foreground"
-                    key={item}
-                  >
+                  <li className="text-sm leading-6 text-muted-foreground" key={item}>
                     {item}
                   </li>
                 ))}
@@ -156,9 +149,9 @@ export function ResumeView() {
             </div>
           </div>
           <p className="mt-6 max-w-3xl text-sm leading-7 text-muted-foreground">
-            The dual-degree background shows up in Jays&apos; product work:
-            systems thinking, first-principles reasoning, and comfort operating
-            across technical and business ambiguity.
+            The dual-degree background shows up in Jays&apos; product work: systems
+            thinking, first-principles reasoning, and comfort operating across technical
+            and business ambiguity.
           </p>
         </article>
       </Tabs.Content>

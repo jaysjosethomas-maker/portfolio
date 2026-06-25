@@ -19,14 +19,16 @@ export default function ExperiencePage() {
   return (
     <>
       <Container className="py-16 md:py-24">
-        <Badge variant="outline">BITS -> Ola -> Joveo -> Ola -> Krutrim</Badge>
+        <Badge variant="outline">
+          BITS -&gt; Ola -&gt; Joveo -&gt; Ola -&gt; Krutrim
+        </Badge>
         <h1 className="mt-7 max-w-5xl text-balance text-6xl font-semibold tracking-[-0.075em] md:text-8xl">
           A career built around messy systems becoming clear products.
         </h1>
         <p className="mt-7 max-w-3xl text-pretty text-lg leading-8 text-muted-foreground md:text-xl">
-          Jays has moved through physics, engineering, marketplaces, SaaS,
-          consumer operations, and AI infrastructure. The consistent pattern is
-          product judgment under complexity.
+          Jays has moved through physics, engineering, marketplaces, SaaS, consumer
+          operations, and AI infrastructure. The consistent pattern is product judgment
+          under complexity.
         </p>
       </Container>
 

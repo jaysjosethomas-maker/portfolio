@@ -20,9 +20,8 @@ export default function ResumePage() {
         Built for humans. Structured for ATS.
       </h1>
       <p className="mt-7 max-w-3xl text-pretty text-lg leading-8 text-muted-foreground md:text-xl">
-        A concise view of Jays&apos; product leadership, business impact,
-        platform depth, and education, with a downloadable PDF for hiring
-        workflows.
+        A concise view of Jays&apos; product leadership, business impact, platform
+        depth, and education, with a downloadable PDF for hiring workflows.
       </p>
       <div className="mt-12">
         <ResumeView />

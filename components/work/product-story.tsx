@@ -1,5 +1,4 @@
 import { ArrowLeft, Download } from "lucide-react";
-import type { Route } from "next";
 import Link from "next/link";
 
 import { Container } from "@/components/layout/container";
@@ -203,15 +202,13 @@ export function ProductStory({ product }: ProductStoryProps) {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild>
-                <Link href={profile.resumePath as Route}>
+                <a download href={profile.resumePath}>
                   <Download aria-hidden="true" />
                   Download Resume
-                </Link>
+                </a>
               </Button>
               <Button asChild variant="outline">
-                <Link href={`mailto:${profile.email}` as Route}>
-                  Discuss this work
-                </Link>
+                <a href={`mailto:${profile.email}`}>Discuss this work</a>
               </Button>
             </div>
           </div>

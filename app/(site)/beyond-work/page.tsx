@@ -20,8 +20,8 @@ export default function BeyondWorkPage() {
         The supporting identities stay quiet.
       </h1>
       <p className="mt-7 max-w-3xl text-pretty text-lg leading-8 text-muted-foreground md:text-xl">
-        Physics, astronomy, photography, and mentoring are not the headline.
-        They are the practices that sharpen attention, judgment, and patience.
+        Physics, astronomy, photography, and mentoring are not the headline. They are
+        the practices that sharpen attention, judgment, and patience.
       </p>
 
       <div className="mt-12 grid gap-4 md:grid-cols-2">
@@ -31,9 +31,7 @@ export default function BeyondWorkPage() {
             key={item.title}
           >
             <item.icon aria-hidden="true" className="size-5" />
-            <h2 className="mt-8 text-2xl font-semibold tracking-tight">
-              {item.title}
-            </h2>
+            <h2 className="mt-8 text-2xl font-semibold tracking-tight">{item.title}</h2>
             <p className="mt-4 text-sm leading-7 text-muted-foreground">
               {item.description}
             </p>

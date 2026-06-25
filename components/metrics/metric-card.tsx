@@ -33,9 +33,7 @@ export function MetricCard({ metric, className }: MetricCardProps) {
         />
         {metric.suffix ? <span>{metric.suffix}</span> : null}
       </div>
-      <p className="mt-5 text-sm leading-6 text-muted-foreground">
-        {metric.detail}
-      </p>
+      <p className="mt-5 text-sm leading-6 text-muted-foreground">{metric.detail}</p>
     </article>
   );
 }

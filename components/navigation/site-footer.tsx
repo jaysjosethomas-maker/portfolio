@@ -10,8 +10,8 @@ export function SiteFooter() {
         <div>
           <p className="text-sm font-semibold tracking-tight">{profile.name}</p>
           <p className="mt-2 max-w-md text-sm leading-6 text-muted-foreground">
-            Product leader building AI infrastructure, cloud platforms,
-            marketplaces, and business systems at scale.
+            Product leader building AI infrastructure, cloud platforms, marketplaces,
+            and business systems at scale.
           </p>
         </div>
         <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">

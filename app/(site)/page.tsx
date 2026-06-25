@@ -47,10 +47,10 @@ export default function HomePage() {
                 <ArrowRight aria-hidden="true" className="ml-2 size-4" />
               </MagneticLink>
               <Button asChild className="h-12 rounded-full px-6" variant="outline">
-                <Link download href={profile.resumePath as Route}>
+                <a download href={profile.resumePath}>
                   <Download aria-hidden="true" />
                   Download Resume
-                </Link>
+                </a>
               </Button>
             </div>
           </FadeIn>
@@ -64,7 +64,7 @@ export default function HomePage() {
                       Product operating system
                     </p>
                     <p className="mt-2 text-sm font-semibold">
-                      Strategy -> systems -> shipped outcomes
+                      Strategy -&gt; systems -&gt; shipped outcomes
                     </p>
                   </div>
                   <div className="flex gap-1.5">
@@ -192,11 +192,14 @@ export default function HomePage() {
             <h2 className="max-w-3xl text-balance text-4xl font-semibold tracking-[-0.05em] md:text-6xl">
               Let&apos;s build something meaningful.
             </h2>
-            <Button asChild className="bg-background text-foreground hover:bg-background/90">
-              <Link href={`mailto:${profile.email}` as Route}>
+            <Button
+              asChild
+              className="bg-background text-foreground hover:bg-background/90"
+            >
+              <a href={`mailto:${profile.email}`}>
                 Contact Jays
                 <ArrowRight aria-hidden="true" />
-              </Link>
+              </a>
             </Button>
           </div>
         </section>
