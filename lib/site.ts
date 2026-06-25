@@ -1,8 +1,7 @@
 export const siteConfig = {
   name: "Senior Product Manager Portfolio",
   title: "Senior Product Manager Portfolio",
-  description:
-    "A refined personal portfolio foundation for a senior product leader.",
+  description: "A refined personal portfolio foundation for a senior product leader.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com",
   locale: "en_US",
   creator: {

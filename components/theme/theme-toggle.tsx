@@ -10,8 +10,7 @@ export function ThemeToggle() {
   const mounted = useMounted();
   const { setTheme, theme } = useTheme();
 
-  const nextTheme =
-    theme === "light" ? "dark" : theme === "dark" ? "system" : "light";
+  const nextTheme = theme === "light" ? "dark" : theme === "dark" ? "system" : "light";
 
   const label = mounted ? `Switch to ${nextTheme} theme` : "Change theme";
 
